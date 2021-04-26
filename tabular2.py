@@ -33,6 +33,3 @@ def compose_plot_file_name(x_label, y_label, category_label = None):
     plot_path = "{0}-v-{1}{2}.pdf".format(x_label, y_label,
             category_str)
     return plot_path
-    print (plot_path)
-
-compose_plot_file_name('X', 'Y')
