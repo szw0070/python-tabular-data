@@ -10,7 +10,7 @@ def make_dataframe_all():
     Returns
     -------
     the dataframe
-    """"
+    """
     dataframe = pd.read_csv("iris.csv") #uses panda to import csv as a dataframe
     x = dataframe.petal_length_cm #defines x using column of dataframe
     y = dataframe.sepal_length_cm #defines y using column of dataframe
@@ -42,13 +42,13 @@ def test():
 
 if __name__ == "__main__":
     def setosa():
-    """
-    Creates a plot after splitting the full data frame up by species 'setosa'
-    Returns
-    -------
-    None
-        The plotting data is saved and nothing is returned.
-    """
+        """
+        Creates a plot after splitting the full data frame up by species 'setosa'
+        Returns
+        -------
+        None
+            The plotting data is saved and nothing is returned.
+        """
 #use function that makes dataframe with all data to make a variable called dataframe
         df = make_dataframe_all()
     #print(df)
@@ -70,14 +70,14 @@ if __name__ == "__main__":
 
 
     def virginica():
-    """
-    Splits up entire dataframe into just species 'virginica' data.
-    Creates a scatterplot for a data for this species and a regression line.
-    Returns
-    -------
-    None
-        The plotting data is saved and nothing is returned.
-    """
+        """
+        Splits up entire dataframe into just species 'virginica' data.
+        Creates a scatterplot for a data for this species and a regression line.
+        Returns
+        -------
+        None
+            The plotting data is saved and nothing is returned.
+        """
 #use function that makes dataframe with all data to make a variable called dataframe
         df = make_dataframe_all()
     #print(df)
@@ -98,15 +98,15 @@ if __name__ == "__main__":
         #plt.savefig("petal_v_sepal_length_regress_Virginica.png") #saves the figure as a png
 
     def versicolor():
-    """
-    Splits up entire dataframe into just species 'versicolor' data.
-    Creates a scatterplot for a data for this species and a regression line.
-    Creates a png file with all 3 species split into different colors and 3 regression lines.
-    Returns
-    ------
-    None
-        The plot is saved and nothing is returned
-    """
+        """
+        Splits up entire dataframe into just species 'versicolor' data.
+        Creates a scatterplot for a data for this species and a regression line.
+        Creates a png file with all 3 species split into different colors and 3 regression lines.
+        Returns
+        ------
+        None
+            The plot is saved and nothing is returned
+        """
 #use function that makes dataframe with all data to make a variable called dataframe
         df = make_dataframe_all()
     #print(df)
